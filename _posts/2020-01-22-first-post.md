@@ -2,7 +2,7 @@
 title: "First post"
 date: 2020-01-22
 categories: Story
-tags: swift
+tags: 일상
 ---
 
 ``` swift
