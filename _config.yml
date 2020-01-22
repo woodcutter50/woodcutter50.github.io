@@ -115,7 +115,7 @@ author:
   links:
     - label: "companyEmail"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:edgar.kim@goodoc.co.kr
+#       url: mailto:edgar.kim@goodoc.co.kr
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
