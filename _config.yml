@@ -15,11 +15,11 @@ remote_theme             : mmistakes/minimal-mistakes
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko"
 title                    : "사과를 사각사각"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "WoodCutter50"
+name                     : ""
 description              : ""
 url                      : "https://woodcutter50.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -110,7 +110,7 @@ author:
   name             : "woodcutter50"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Apple tree owner"
-  location         : "Somewhere"
+  location         : "Korea"
   email            : "ksy625050@gmail.com"
   links:
     - label: "Sub Email"
