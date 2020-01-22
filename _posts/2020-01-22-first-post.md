@@ -2,7 +2,7 @@
 title: "블로그 시작"
 date: 2020-01-22
 categories: Story
-tags: swift
+tags: #swift
 ---
 
 ``` swift
