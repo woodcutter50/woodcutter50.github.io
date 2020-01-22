@@ -1,7 +1,7 @@
 ---
 title: "Apple Tree"
 date: 2020-01-22
-category: swift swiftUI
+categories: swift swiftUI
 ---
 
 ``` swift
