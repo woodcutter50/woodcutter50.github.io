@@ -113,7 +113,7 @@ author:
   location         : "Somewhere"
   email            : "ksy625050@gmail.com"
   links:
-    - label: "companyEmail"
+    - label: "Sub Email"
       icon: "fas fa-fw fa-envelope-square"
 #       url: mailto:edgar.kim@goodoc.co.kr
     - label: "Website"
