@@ -1,5 +1,5 @@
 ---
-title: "블로그 시작"
+title: "First post"
 date: 2020-01-22
 categories: Story
 tags: swift
