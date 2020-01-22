@@ -1,5 +1,5 @@
 main:
-  - title: "카테고리"
+  - title: "Categories"
     url: /categories/
   - title: "Tags"
     url: /tags/
