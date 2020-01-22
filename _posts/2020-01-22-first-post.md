@@ -1,7 +1,8 @@
 ---
-title: "Welcome to Jekyll!"
-date: 2017-10-20 08:26:28 -0400
-categories: swift
+title: "블로그 시작"
+date: 2020-01-22
+categories: Story
+tags: swift
 ---
 
 ``` swift
