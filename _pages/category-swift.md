@@ -1,6 +1,6 @@
 ---
 title: "Swift"
-permalink: /categories/swift/
+permalink: /swift/
 layout: category
 author_profile: true
 taxonomy: swift
