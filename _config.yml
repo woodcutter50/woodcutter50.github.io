@@ -113,9 +113,9 @@ author:
   location         : "Somewhere"
   email            : "ksy625050@gmail.com"
   links:
-    - label: "Email"
+    - label: "companyEmail"
       icon: "fas fa-fw fa-envelope-square"
-#       url: mailto:ksy625050@gmail.com
+      url: mailto:edgar.kim@goodoc.co.kr
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
