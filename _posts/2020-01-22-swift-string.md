@@ -3,6 +3,6 @@ title: "Swift String"
 excerpt: "Swift string 정리"
 date: 2020-01-22
 
-category: [swift, swiftui]
+category: [Swift, Swiftui]
 tags: Swift String
 ---
