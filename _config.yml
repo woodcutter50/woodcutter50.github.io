@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "사과나무"
+title                    : "site settings title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "WoodCutter50"
@@ -107,11 +107,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "woodcutter50"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "사과를 좋아해"
   location         : "Somewhere"
-  email            :
+  email            : "ksy625050@"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
