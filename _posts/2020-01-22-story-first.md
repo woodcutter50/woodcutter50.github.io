@@ -1,7 +1,7 @@
 ---
 title: "First post"
 date: 2020-01-22
-category: story
+category: Story
 tags: 일상
 ---
 
