@@ -1,6 +1,6 @@
 ---
 title: "SwiftUI"
-permalink: /categories/swiftui/
+permalink: /swiftui/
 layout: category
 author_profile: true
 taxonomy: swiftui
