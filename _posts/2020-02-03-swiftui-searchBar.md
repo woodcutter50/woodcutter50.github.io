@@ -14,7 +14,7 @@ tags: SwiftUI SearchBar NavigationView
 이번 시간에는 SwiftUI의 `NavigationView` 에서 `SearchBar` 적용 방법을 알아보겠습니다.
 
 ## Check
-### 시작 하기 전 부가 설명이 필요하여 집고 넘어 가겠습니다. 🥢
+### 시작 하기 전 부가 설명이 필요하여 짚고 넘어 가겠습니다. 🥢
 #### 1. SwiftUI -> SearchBar (X)
 - SwiftUI에서는 SearchBar를 제공하지 않습니다.
 
