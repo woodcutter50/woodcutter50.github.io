@@ -20,7 +20,7 @@ tags: SwiftUI SearchBar NavigationView
 #### 2. UIViewRepresentable
 - UIKit Views 를 SwiftUI와 연결해주는 프로토콜 입니다.
 
-- UIViewRepresentable를 채택해서 UIKit에서 제공하는 UISearchBar처럼 구현 해야합니다.
+- UIViewRepresentable를 채택하고 UIKit에서 제공하는 UISearchBar를 불러와 구현 해야합니다.
 
 
 #### 3. UISearchBarDelegate
