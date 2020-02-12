@@ -124,7 +124,7 @@ func makeCoordinator() -> SearchBar.Coordinator {
 ```
 대략 이런식으로 작성하는데 
 
-Coordinator 사용법은 다음 시간에 설명 하겠습니다.
+Coordinator 사용법은 다음 시간에 이어서 설명 하겠습니다.
 
 감사합니다.
 
