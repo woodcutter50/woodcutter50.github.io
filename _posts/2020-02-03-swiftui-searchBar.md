@@ -105,26 +105,27 @@ struct MainView: View {
 ```
 `MainView` 라는 View를 만들었고 body 부분에 `NavigationView` 추가 했습니다
 
-NavigationView에는 `VStack` 을 추가 한 다음 컴포넌트의 진행방향, 간격을 설정 하고 `SearchBar` 를 추가해 줍니다.
+avigationView에는 `VStack` 을 추가 한 다음 컴포넌트의 진행방향, 간격을 설정 하고 `SearchBar` 를 추가해 줍니다.
 
 예쁜? 화면 구성을 위해서 SearchBar 아래 List를 추가했습니다.
 
 실행 해 보시면 정상적으로 SearchBar가 출력됩니다.
 
-완성!!!!👏🏻👏🏻👏🏻 이면 좋겠지만...
+완성!!!!👏🏻👏🏻👏🏻 ...이면 좋겠지만 중요한 문제가 있습니다!
 
-여기에 중요한 문제가 있습니다!
+바로 `UISearchBarDelegate` 를 사용하지 않아 추가 기능을 구현할 수 없습니다.
 
-바로 `UISearchBarDelegate` 를 사용하지 않아서 UISearchBar의 기능을 온전하게 사용할 수 없습니다.
+그래서 `makeCoordinator` 라는 메서드를 이용해서 coordinator 인스턴스를 만들고 delegate를 구현해야 합니다.
 
-문제는 SwiftUI 는 struct이기때문에 UISearchBarDelegate를 사용할수 없어요~
+``` swift
+    func makeCoordinator() -> SearchBar.Coordinator {
+        return Coordinator(text: $text, showCancelButton: $showCancelButton)
+    }
+```
+대략 이런식으로 작성하는데 
 
-그래서 `makeCoordinator` 라는 메서드를 이용해서 coordinator를 만들고 coordinator가 delegate 를 구현하여 넘겨줍니다.
+Coordinator 사용법은 다음 시간에 설명 하겠습니다.
 
-SwiftUI는 아직 많은 기능을 제공하지 않기때문에 UIKit의 기능을 사용하가위해선는 반드시 Coordinator 개념을 이해하고 넘어가야합니다.
-
-그래서 다음 시간에는 Coordinator를 사용하여 좀더 완성된 SearchBar를 만들어 보겠습니다.
-
-감사합니다. 
+감사합니다.
 
 뿅!
