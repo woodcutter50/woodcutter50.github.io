@@ -25,7 +25,7 @@ tags: SwiftUI SearchBar NavigationView
 
 #### 3. UISearchBarDelegate
 - UISearchBar의 delegate 프로퍼티는 UISearchBarDelegate 타입입니다.
-- delegate 활용하여 text 처리에 필요한 기능을 사용할수 있습니다.
+- delegate 활용하여 필요한 추가 기능을 사용할수 있습니다.
 
 ## Code
 ``` swift
