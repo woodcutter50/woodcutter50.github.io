@@ -10,6 +10,7 @@ tags: SwiftUI SearchBar NavigationView
 # NavigationView 에서 SearchBar 적용하기
 
 ### 안녕하세요 woodcutter 입니다.
+
 이번 시간에는 SwiftUI의 `NavigationView` 에서 `SearchBar` 적용 방법을 알아보겠습니다.
 
 ## Check
