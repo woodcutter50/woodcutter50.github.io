@@ -12,7 +12,7 @@ tags: SwiftUI SearchBar NavigationView
 #### 안녕하세요 woodcutter 입니다.
 #### 이번 시간에는 SwiftUI의 `NavigationView` 에서 `SearchBar` 적용 방법을 알아보겠습니다.
 
-## SearchBar
+## Check
 ### 시작 하기 전 부가 설명이 필요하여 집고 넘어 가겠습니다. 🥢
 #### 1. SwiftUI -> SearchBar (X)
 - SwiftUI에서는 SearchBar를 제공하지 않습니다.
@@ -27,14 +27,15 @@ tags: SwiftUI SearchBar NavigationView
 - UISearchBar의 delegate 프로퍼티는 UISearchBarDelegate 타입입니다.
 - delegate 활용하여 필요한 추가 기능을 사용할수 있습니다.
 
-## Code
+## SearchBar
 ``` swift
 struct SearchBar: UIViewRepresentable {
     
 }
 ```
-UIKit 에서 제공하는 UISearchBar를 사용하기 위해서 UIViewRepresentable 채택하면
-아래와 같이 에러가 발생합니다!
+UIKit 에서 제공하는 UISearchBar를 사용하기 위해서 UIViewRepresentable 채택하면!
+짠! 시작부터 에러가 발생하네요...ㅋㅋㅋ
+
 ### Type 'SearchBar' does not conform to protocol 'UIViewRepresentable'
 가볍게 오류를 fix 해서 자동완성 해줍니다.
 
@@ -43,7 +44,7 @@ struct SearchBar: UIViewRepresentable {
     typealias UIViewType = UISearchBar
 }
 ```
-자동완성 해주면 typealias UIViewType가 생성되고 UIKit 에서 제공하는 UISearchBar를 사용하려 했기때문에 UIViewType에 UISearchBar를 추가해 줍니다!
+fix 하면 typealias UIViewType가 생성되고 UIKit 에서 제공하는 UISearchBar를 추가해 줍니다!
 
 그런데 타입을 지정해 주어도 똑같은 오류가 발생합니다...
 ### Type 'SearchBar' does not conform to protocol 'UIViewRepresentable'
@@ -64,11 +65,11 @@ struct SearchBar: UIViewRepresentable {
 ```
 두개의 메서드가 생성되었네요 
 1. makeUIView
-- 뷰 를 만들고 만든 뷰 를 리턴 하는데 리턴 타입은 UISearchBar 입니다.
+- View를 만들고 View를 리턴 하는데 리턴 타입은 UIViewType에 추가한 UISearchBar 입니다.
 2. updateUIView
-- 우리가 직접 생성한 `SearchBar` 를 SwiftUI에서 사용중 변경 사항이 생기는경우 updateUIView가 호출되고 매개 변수인 context를 사용하여 업데이트 합니다.
+- 우리가 만든 `SearchBar` 를 SwiftUI에서 사용중 업데이트 가 발생하면 updateUIView가 호출되고 매개 변수인 context를 사용하여 업데이트 할수 있습니다.
 
-그럼 makeUIVIew 메서드에 우리가 사용하고 싶은 UISearchBar를 만들겠습니다!
+그럼 makeUIVIew 메서드에 UISearchBar를 만들겠습니다!
 ``` swift
 func makeUIView(context: UIViewRepresentableContext<SearchBar>) -> UISearchBar {
 	let searchBar = UISearchBar(frame: .zero)
@@ -81,7 +82,9 @@ func makeUIView(context: UIViewRepresentableContext<SearchBar>) -> UISearchBar {
 ```
 UISearchBar를 선언하고 기본설정을 해주었습니다.
 
-이제 SwiftUI의 NavigationView를 사용하여 우리가 만든 SearchBar를 적용해 보겠습니다.
+다음은 SwiftUI의 NavigationView를 사용하여 우리가 만든 SearchBar를 적용해 보겠습니다.
+
+## NavigationView
 
 ``` swift
 struct MainView: View {
@@ -108,7 +111,9 @@ NavigationView에는 `VStack` 을 추가 한 다음 컴포넌트의 진행방향
 
 실행 해 보시면 정상적으로 SearchBar가 출력됩니다.
 
-그러나 여기에는 중요한 문제가 있습니다.
+완성!!!!👏🏻👏🏻👏🏻 이면 좋겠지만...
+
+여기에 중요한 문제가 있습니다!
 
 바로 `UISearchBarDelegate` 를 사용하지 않아서 UISearchBar의 기능을 온전하게 사용할 수 없습니다.
 
