@@ -117,10 +117,10 @@ avigationView에는 `VStack` 을 추가 한 다음 컴포넌트의 진행방향,
 
 그래서 `makeCoordinator` 라는 메서드를 이용해서 coordinator 인스턴스를 만들고 delegate를 구현해야 합니다.
 
-``` swift
-    func makeCoordinator() -> SearchBar.Coordinator {
-        return Coordinator(text: $text, showCancelButton: $showCancelButton)
-    }
+```` swift
+func makeCoordinator() -> SearchBar.Coordinator {
+	return Coordinator(text: $text, showCancelButton: $showCancelButton)
+}
 ```
 대략 이런식으로 작성하는데 
 
