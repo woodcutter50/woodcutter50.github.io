@@ -113,7 +113,7 @@ avigationView에는 `VStack` 을 추가 한 다음 컴포넌트의 진행방향,
 
 완성!!!!👏🏻👏🏻👏🏻 ...이면 좋겠지만 중요한 문제가 있습니다!
 
-바로 `UISearchBarDelegate` 를 사용하지 않아 추가 기능을 구현할 수 없습니다.
+바로 `UISearchBarDelegate` 를 사용하지 않아 추가 기능을 구현할 수 없어요!
 
 그래서 `makeCoordinator` 라는 메서드를 이용해서 coordinator 인스턴스를 만들고 delegate를 구현해야 합니다.
 
