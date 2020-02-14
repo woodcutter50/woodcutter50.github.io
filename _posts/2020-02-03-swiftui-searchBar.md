@@ -47,7 +47,7 @@ struct SearchBar: UIViewRepresentable {
 ```
 fix 하면 typealias UIViewType가 생성되고 UISearchBar를 추가해 줍니다!
 
-그런데 타입을 지정해 주어도 똑같은 오류가 발생합니다...
+그런데 타입을 지정해 주어도 똑같은 오류가 발생합니다...🤷🏻‍♂️
 ### Type 'SearchBar' does not conform to protocol 'UIViewRepresentable'
 한번 더 fix 해줍니다.
 
